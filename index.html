@@ -18,8 +18,9 @@
 
     <!-- Search Bar -->
     <div class="search-container">
-        <input type="text" id="search-bar" placeholder="Search destinations or keywords...">
+        <input type="text" id="search-bar" placeholder="Search destinations or keywords..." oninput="searchDestinations()">
         <button onclick="searchDestinations()">Search</button>
+        <button onclick="clearSearch()">Clear</button>
     </div>
 
     <!-- Content Section with Background Image, Headline, Description, Social Media Links, and Book Now Button -->

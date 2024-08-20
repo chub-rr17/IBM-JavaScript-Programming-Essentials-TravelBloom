@@ -77,3 +77,9 @@ function searchDestinations() {
     resultsContainer.style.display = "none";
   }
 }
+
+
+function clearSearch() {
+    document.getElementById('search-bar').value = '';
+    searchDestinations(); // Call searchDestinations to reset the display
+}
