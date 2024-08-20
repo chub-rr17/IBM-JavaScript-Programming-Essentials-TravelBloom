@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search destinations or keywords...">
+        <button onclick="searchDestinations()">Search</button>
+    </div>
+
+    <!-- Content Section with Background Image, Headline, Description, Social Media Links, and Book Now Button -->
+    <section class="content">
+        <div class="overlay"></div>
+        <div class="content-inner">
+            <h1>Explore the World with TravelBloom</h1>
+            <p>Discover your next adventure and immerse yourself in the beauty of cultural exploration.</p>
+            <button class="book-now">Book Now</button>
+            <div class="social-media">
+                <a href="#" class="social-icon">Facebook</a>
+                <a href="#" class="social-icon">Twitter</a>
+                <a href="#" class="social-icon">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="introduction">
+        <h1>Welcome to TravelBloom</h1>
+        <p>Your gateway to discovering the world's most amazing destinations.</p>
+    </section>
+
+    <!-- Beach Recommendations -->
+    <section class="recommendation">
+        <h2>Top Beach Destinations</h2>
+        <div class="recommendation-item">
+            <img src="assets/beach-1.jpg" alt="Beach 1">
+            <img src="assets/beach-2.jpg" alt="Beach 2">
+        </div>
+    </section>
+
+    <!-- Temple Recommendations -->
+    <section class="recommendation">
+        <h2>Must-Visit Temples</h2>
+        <div class="recommendation-item">
+            <img src="assets/temple-1.jpg" alt="Temple 1">
+            <img src="assets/temple-2.jpg" alt="Temple 2">
+        </div>
+    </section>
+
+    <!-- Country Recommendations -->
+    <section class="recommendation">
+        <h2>Explore by Country</h2>
+        <div class="recommendation-item">
+            <img src="assets/paris.jpg" alt="France">
+            <img src="assets/japan.jpg" alt="Japan">
+        </div>
+    </section>
+
+    <!-- Search Results -->
+    <div id="search-results"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

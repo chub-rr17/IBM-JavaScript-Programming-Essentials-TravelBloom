@@ -1,0 +1,262 @@
+/* General Styles */
+body, h1, h2, p, ul, label {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Home Page Specific Styles */
+/* Search Bar */
+.search-container {
+    margin: 20px;
+}
+
+#search-bar {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-container button:hover {
+    background-color: #555;
+}
+
+/* Content Section */
+.content {
+    width: 100%;
+    height: 500px;
+    background: url('assets/homepage-banner.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content-inner {
+    text-align: center;
+    z-index: 1;
+}
+
+.content-inner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.content-inner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.book-now {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.book-now:hover {
+    background-color: #ff4b4b;
+}
+
+/* Social Media Links */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-icon:hover {
+    text-decoration: underline;
+}
+
+/* Introduction Section */
+.introduction {
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+.introduction h1 {
+    margin-bottom: 10px;
+}
+
+.introduction p {
+    font-size: 18px;
+}
+
+/* Recommendation Sections */
+.recommendation {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.recommendation h2 {
+    margin-bottom: 15px;
+}
+
+.recommendation-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommendation-item img {
+    width: 45%;
+    border-radius: 5px;
+}
+
+/* Search Results */
+#search-results {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: none;
+    border-radius: 5px;
+}
+
+/* About Us Page Specific Styles */
+.about-us {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.about-us h1, .about-us h2 {
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Contact Us Page Specific Styles */
+.contact-us {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-us h1 {
+    margin-bottom: 20px;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-us input, .contact-us textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-us button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+    border-radius: 5px;
+}
+
+.contact-us button:hover {
+    background-color: #555;
+}
+
+#form-response {
+    margin-top: 20px;
+    font-weight: bold;
+    color: green;
+}
